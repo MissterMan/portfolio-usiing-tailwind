@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayogi</title>
+
+    <!-- Typing JS -->
+    <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+    <!-- Animate on Scroll JS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css tailwind -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="bg-topo bg-first selection:bg-custom-yellow-bright selection:text-white">
+    <!-- Navbar -->
+    <nav class="m-0 bg-custom-yellow h-auto shrink-0">
+        <div class="max-w-6xl mx-auto px-5 py-5">
+            <div class="flex justify-between">
+                <div class="flex">
+                    <a href="#" class="flex font-clash font-bold items-center text-2xl">
+                        Prayogi
+                    </a>
+                </div>
+                <div class="flex justify-between space-x-5">
+                    <a class="" href="#"><img class=" h-10 w-10" src="icon/GitHub-Mark-64px.png"
+                            alt="Icon Github"></a>
+                    <a class="" href="#"><img class=" h-10 w-10" src="icon/LinkedIn.png" alt="Icon Github"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About -->
+    <div class="backdrop-blur-sm h-auto md:mx-44 lg:my-20 md:rounded-3xl md:shadow-xl">
+        <div class="flex py-7 mx-5 justify-center">
+            <img class="shrink-0 hidden lg:block" src="img/profile.png" alt="profilku">
+            <div class="md:pt-24">
+                <h1 id="nama" class="font-bold text-4xl font-clash"></h1>
+                <p class="pt-4 font-normal font-clash min-w-fit">Im a university student, UI Design Enthusiast, and
+                    i
+                    also had an experience in Front-end web development, familiar using css framework like Bootstrap
+                    and
+                    still learning about new css framework Tailwind CSS.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technologies -->
+    <div class="backdrop-blur-sm lg:my-20 md:mx-44 md:rounded-3xl md:shadow-xl">
+        <h1 class="text-3xl py-10 text-center font-bold font-clash">Technologies</h1>
+        <div class="flex flex-wrap pb-5">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-12 h-12 mx-auto my-6" src="./icon/css-3.svg"
+                alt="Css">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="max-w-fit mx-auto my-6"
+                src="./icon/figma.svg" alt="Figma">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150" class="max-w-fit mx-auto my-5"
+                src="./icon/java.svg" alt="Java">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200" class="max-w-fit mx-auto my-5"
+                src="./icon/bootstrap.svg" alt="Bootstrap">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250" class="w-12 h-12 mx-auto my-5"
+                src="./icon/Tailwind_Icon.png" alt="Tailwind">
+        </div>
+    </div>
+
+    <!-- Project -->
+    <div class="backdrop-blur-sm lg:mt-20">
+        <h1 class="text-3xl py-10 md:my-10 text-center font-bold font-clash">Project</h1>
+        <div class="flex-col md:flex md:flex-row mx-14 pb-20">
+            <div
+                class="mx-auto p-6 flex items-center bg-white w-72 h-28 space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500">
+                <div class="shrink-0">
+                    <img class="h-12 w-12" src="https://img.icons8.com/fluency/48/000000/web-design.png"
+                        alt="Web Design" />
+                </div>
+                <div>
+                    <h1 class="font-semibold font-clash text-md">Front-End Web Development</h1>
+                </div>
+            </div>
+            <div
+                class="mx-auto md:my-0 p-6 flex items-center bg-white w-72 h-28 space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500">
+                <div class="shrink-0">
+                    <img class="h-12 w-12" src="https://img.icons8.com/fluency/48/000000/template.png"
+                        alt="Web Design" />
+                </div>
+                <div>
+                    <h1 class="font-semibold font-clash text-md">Web Design</h1>
+                </div>
+            </div>
+            <div
+                class="mx-auto p-6 flex items-center bg-white w-72 h-28 space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500">
+                <div class="shrink-0">
+                    <img class="h-12 w-12" src="https://img.icons8.com/fluency/48/000000/two-smartphones.png"
+                        alt="Web Design" />
+                </div>
+                <div>
+                    <h1 class="font-semibold font-clash text-md">Mobile App Design</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        new TypeIt("#nama", {
+            strings: "Hello There, Im Prayogi!",
+            speed: 100,
+            loop: false,
+        }).go();
+    </script>
+
+</body>
+
+<footer class="bg-custom-yellow h-auto">
+    <p class="font-clash font-medium text-sm text-center py-5">Made with &#128151; by <u
+            class="font-semibold">Prayogi</u></p>
+</footer>
+
+</html>

@@ -623,29 +623,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 1rem;
 }
 
-.bg-neon-primary {
+.bg-neon-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(62 0 255 / var(--tw-bg-opacity));
-}
-
-.bg-custom-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 207 62 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(23 0 85 / var(--tw-bg-opacity));
 }
 
 .bg-neon-second {
   --tw-bg-opacity: 1;
   background-color: rgb(174 0 251 / var(--tw-bg-opacity));
-}
-
-.bg-neon-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 0 85 / var(--tw-bg-opacity));
 }
 
 .bg-neon-third {
@@ -753,21 +738,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 900;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
 .font-semibold {
   font-weight: 600;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.font-medium {
+  font-weight: 500;
 }
 
 .text-neon-third {
@@ -781,11 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-white {
-  --tw-shadow-color: #fff;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -794,16 +765,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.selection\:bg-custom-yellow-bright *::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 225 134 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-custom-yellow-bright *::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 225 134 / var(--tw-bg-opacity));
 }
 
 .selection\:bg-neon-second *::-moz-selection {
@@ -816,16 +777,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(174 0 251 / var(--tw-bg-opacity));
 }
 
-.selection\:text-white *::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.selection\:text-white *::selection {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .selection\:text-neon-third *::-moz-selection {
   --tw-text-opacity: 1;
   color: rgb(181 255 217 / var(--tw-text-opacity));
@@ -834,16 +785,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .selection\:text-neon-third *::selection {
   --tw-text-opacity: 1;
   color: rgb(181 255 217 / var(--tw-text-opacity));
-}
-
-.selection\:bg-custom-yellow-bright::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 225 134 / var(--tw-bg-opacity));
-}
-
-.selection\:bg-custom-yellow-bright::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 225 134 / var(--tw-bg-opacity));
 }
 
 .selection\:bg-neon-second::-moz-selection {
@@ -856,16 +797,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(174 0 251 / var(--tw-bg-opacity));
 }
 
-.selection\:text-white::-moz-selection {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.selection\:text-white::selection {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .selection\:text-neon-third::-moz-selection {
   --tw-text-opacity: 1;
   color: rgb(181 255 217 / var(--tw-text-opacity));
@@ -876,19 +807,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(181 255 217 / var(--tw-text-opacity));
 }
 
-.hover\:font-semibold:hover {
-  font-weight: 600;
-}
-
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:shadow-white:hover {
-  --tw-shadow-color: #fff;
-  --tw-shadow: var(--tw-shadow-colored);
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 @media (min-width: 768px) {

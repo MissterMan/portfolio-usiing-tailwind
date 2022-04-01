@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prayogi</title>
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/0aaaa47af2.js" crossorigin="anonymous"></script>
     <!-- Typing JS -->
     <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
     <!-- Animate on Scroll JS -->
@@ -18,58 +20,80 @@
 
 <body class="bg-topo-dark bg-neon-dark selection:bg-neon-second selection:text-neon-third">
     <!-- Navbar -->
-    <nav class="m-0 bg-neon-second w-full">
+    <nav class="m-0 bg-neon-second w-full fixed top-0 z-10">
         <div class="max-w-6xl mx-auto px-5 py-5">
-            <div class="flex justify-between">
-                <div class="flex">
-                    <a href="#" class="flex font-clash font-bold items-center text-2xl text-neon-third">
-                        Prayogi
-                    </a>
-                </div>
-                <div class="flex justify-between space-x-5">
-                    <a class="" href="https://github.com/MissterMan"><img class=" h-10 w-10" src="icon/Github.svg"
-                            alt="Icon Github"></a>
-                    <a class="" href="#"><img class=" h-10 w-10" src="icon/Linkedin.svg" alt="Icon Github"></a>
+            <div class="flex justify-between items-center">
+                <a href="#" class="flex font-clash font-bold items-center text-2xl text-neon-third">
+                    Prayogi
+                </a>
+                <div class="flex justify-evenly w-80">
+                    <a href="#about" class="text-neon-third font-clash font-semibold hover:underline">About Me</a>
+                    <a href="#skills" class="text-neon-third font-clash font-semibold hover:underline">Skills</a>
+                    <a href="" class="text-neon-third font-clash font-semibold hover:underline">Project</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- About -->
-    <div class="backdrop-blur-sm h-auto py-20 lg:py-0 md:mx-20 lg:mx-44 md:my-20 md:rounded-3xl md:shadow-xl">
-        <div class="flex py-7 mx-5 justify-center">
+    <!-- hero -->
+    <div class="backdrop-blur-sm h-auto py-20 lg:py-0 lg:mt-36 md:mx-20 lg:mx-44 md:my-20 md:rounded-3xl md:shadow-xl">
+        <div class="flex py-7 mx-5 space-x-24">
             <img class="shrink-0 hidden lg:block" src="img/profile.png" alt="profilku">
-            <div class="md:pt-4">
-                <h1 id="nama" class="font-bold text-neon-third text-4xl font-clash lg:pt-24"></h1>
-                <p class="pt-4 font-normal font-clash text-neon-third min-w-fit">Im a university student, UI Design
-                    Enthusiast, and
-                    i
-                    also had an experience in Front-end web development, familiar using css framework like Bootstrap
-                    and
-                    still learning about new css framework Tailwind CSS.</p>
+            <div class="md:pt-4 space-y-2">
+                <h1 data-aos="fade-right" data-aos-duration="1000"
+                    class="font-bold text-neon-third text-4xl font-clash lg:pt-24">Hello There, Im
+                    Prayogi!
+                </h1>
+                <div class="h-20">
+                    <h3 id="role" class="font-clash font-medium text-lg text-neon-third"></h3>
+                </div>
+                <div class="flex items-center bg-white h-fit w-fit rounded-md" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <div class="px-6 py-3 space-x-5">
+                        <a href="https://github.com/MissterMan" target="_blank"><i
+                                class="fa-brands fa-github fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                        <a href="https://www.linkedin.com/in/putra-prayogi/" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                        <a href="https://www.instagram.com/pra.yogi__/" target="_blank"><i
+                                class="fa-brands fa-instagram fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <div id="about" class="backdrop-blur-sm h-auto lg:mt-36 md:mx-20 lg:mx-44 md:my-20 md:rounded-3xl md:shadow-xl">
+        <h1 class="text-3xl py-10 text-center font-bold font-clash text-neon-third">About Me</h1>
+        <div class="lg:flex lg:mx-40 space-x-10 items-center">
+            <p data-aos="zoom-in" data-aos-duration="1000" class="text-neon-third font-clash font-medium text-lg">Im a
+                university student,
+                UI Design
+                Enthusiast, and i also had an experience in Front-end web development, familiar using css framework
+                like <a class="underline hover:bg-neon-second" href="#">Bootstrap</a> and <a
+                    class="underline hover:bg-neon-second" href="#">Tailwind CSS</a>.</p>
+            <img class="shrink-0 hidden lg:block" src="img/profile2.png" alt="profilku">
+        </div>
+    </div>
+
     <!-- Technologies -->
-    <div class="backdrop-blur-sm py-44 md:py-0 md:my-20 md:mx-20 lg:my-52 lg:mx-44 md:rounded-3xl md:shadow-xl">
+    <div id="skills" class="backdrop-blur-sm md:py-0 md:my-20 md:mx-20 lg:my-52 lg:mx-44 md:rounded-3xl md:shadow-xl">
         <h1 class="text-3xl py-10 text-center font-bold font-clash text-neon-third">Technologies</h1>
         <div class="flex pb-7">
             <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-12 h-12 mx-auto my-6" src="./icon/css-3.svg"
                 alt="Css">
             <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="max-w-fit mx-auto my-6"
                 src="./icon/figma.svg" alt="Figma">
-            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150" class="max-w-fit mx-auto my-5"
-                src="./icon/java.svg" alt="Java">
-            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200" class="max-w-fit mx-auto my-5"
-                src="./icon/bootstrap.svg" alt="Bootstrap">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150" class="w-12 h-12 mx-auto my-5"
+                src="./icon/javascript.png" alt="Java">
+            <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200" class="w-16 h-14 mx-auto my-5"
+                src="./icon/bs.png" alt="Bootstrap">
             <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250" class="w-12 h-12 mx-auto my-5"
                 src="./icon/Tailwind_Icon.png" alt="Tailwind">
         </div>
     </div>
 
     <!-- Project -->
-    <div class="backdrop-blur-sm lg:mt-20 pb-20">
+    <div class="backdrop-blur-sm lg:mt-10 pb-20">
         <h1 class="text-3xl py-10 md:my-10 text-center font-bold font-clash text-neon-third">Project</h1>
         <div class="flex-col lg:flex lg:flex-row lg:mx-14">
 
@@ -115,21 +139,68 @@
                     </p>
                 </div>
             </div>
-
         </div>
-
     </div>
+
+
+    <!-- <div class="backdrop-blur-sm lg:mt-20 pb-20 lg:mx-44 lg:my-52">
+        <div class="p-10">
+            <div class="flex items-center w-fit space-x-7">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-10 h-10 mx-auto my-6"
+                    src="./icon/css-3.svg" alt="CSS">
+                <div class="relative">
+                    <div class="w-[206px] h-[12px] rounded-lg border-2 border-neon-third"></div>
+                    <div class="w-[125px] h-[6px] rounded-lg bg-neon-second absolute top-[3px] left-[3px]"></div>
+                </div>
+            </div>
+            <div class="flex items-center w-fit space-x-7">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="w-10 h-10 mx-auto my-6"
+                    src="./icon/figma.svg" alt="Figma">
+                <div class="relative">
+                    <div class="w-[206px] h-[12px] rounded-lg border-2 border-neon-third"></div>
+                    <div class="w-[105px] h-[6px] rounded-lg bg-neon-second absolute top-[3px] left-[3px]"></div>
+                </div>
+            </div>
+            <div class="flex items-center w-fit space-x-7">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-10 h-10 mx-auto my-6"
+                    src="./icon/bootstrap.svg" alt="Bootstrap">
+                <div class="relative">
+                    <div class="w-[206px] h-[12px] rounded-lg border-2 border-neon-third"></div>
+                    <div class="w-[145px] h-[6px] rounded-lg bg-neon-second absolute top-[3px] left-[3px]"></div>
+                </div>
+            </div>
+            <div class="flex items-center w-fit space-x-7">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-10 h-10 mx-auto my-6"
+                    src="./icon/Tailwind_Icon.png" alt="tailwind">
+                <div class=" relative">
+                    <div class="w-[206px] h-[12px] rounded-lg border-2 border-neon-third"></div>
+                    <div class="w-[150px] h-[6px] rounded-lg bg-neon-second absolute top-[3px] left-[3px]"></div>
+                </div>
+            </div>
+            <div class="flex items-center w-fit space-x-7">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-10 h-10 mx-auto my-6"
+                    src="./icon/javascript.png" alt="javascript">
+                <div class="relative">
+                    <div class="w-[206px] h-[12px] rounded-lg border-2 border-neon-third"></div>
+                    <div class="w-[106px] h-[6px] rounded-lg bg-neon-second absolute top-[3px] left-[3px]"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
 
-        new TypeIt("#nama", {
-            strings: "Hello There, Im Prayogi!",
+        new TypeIt("#role", {
+            strings: ["Student 📖", "Front-end web developer 💻", "UI Enthusiast 🎨"],
             speed: 100,
-            loop: false,
+            loop: true,
         }).go();
     </script>
+
 
 </body>
 

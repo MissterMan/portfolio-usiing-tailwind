@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prayogi</title>
 
     <!-- Icons -->
@@ -14,155 +14,162 @@
     <!-- Animate on Scroll JS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css tailwind -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="bg-topo-dark bg-neon-dark selection:bg-neon-second selection:text-neon-third">
+<body class="bg-neon-dark bg-topo-dark selection:bg-neon-second selection:text-neon-third">
     <!-- Navbar -->
-    <nav class="m-0 bg-neon-second w-full fixed top-0 z-10">
-        <div class="max-w-6xl mx-auto px-5 py-5">
-            <div class="flex justify-between items-center">
-                <a href="#" class="flex font-clash font-bold items-center text-2xl text-neon-third">
+    <nav class="fixed top-0 z-10 m-0 w-full bg-neon-second">
+        <div class="mx-auto max-w-6xl px-5 py-5">
+            <div class="flex items-center justify-between">
+                <a href="#" class="flex items-center font-clash text-2xl font-bold text-neon-third">
                     Prayogi
                 </a>
-                <div class="lg:flex hidden justify-evenly w-80">
-                    <a href="#about" class="text-neon-third font-clash font-semibold hover:underline">About Me</a>
-                    <a href="#skills" class="text-neon-third font-clash font-semibold hover:underline">Skills</a>
-                    <a href="#project" class="text-neon-third font-clash font-semibold hover:underline">Project</a>
+                <div class="hidden w-80 justify-evenly lg:flex">
+                    <a href="#about" class="font-clash font-semibold text-neon-third hover:underline">About Me</a>
+                    <a href="#skills" class="font-clash font-semibold text-neon-third hover:underline">Skills</a>
+                    <a href="#project" class="font-clash font-semibold text-neon-third hover:underline">Project</a>
                 </div>
-                <div id="hamburger" class="lg:hidden flex-col block shrink-0 cursor-pointer space-y-1">
-                    <a class="block bg-neon-third rounded-full w-5 h-0.5"></a>
-                    <a class="block bg-neon-third rounded-full w-5 h-0.5"></a>
-                    <a class="block bg-neon-third rounded-full w-5 h-0.5"></a>
+                <div id="hamburger" class="block shrink-0 cursor-pointer flex-col space-y-1 lg:hidden">
+                    <a class="block h-0.5 w-5 rounded-full bg-neon-third"></a>
+                    <a class="block h-0.5 w-5 rounded-full bg-neon-third"></a>
+                    <a class="block h-0.5 w-5 rounded-full bg-neon-third"></a>
                 </div>
             </div>
-            <div id="mobile" class="hidden flex-col my-5 text-right w-full space-y-2">
-                <a href="#about" class="block text-neon-third font-clash font-semibold hover:underline">About Me</a>
-                <a href="#skills" class="block text-neon-third font-clash font-semibold hover:underline">Skills</a>
-                <a href="#project" class="block text-neon-third font-clash font-semibold hover:underline">Project</a>
+            <div id="mobile" class="my-5 hidden w-full flex-col space-y-2 text-right">
+                <a href="#about" class="block font-clash font-semibold text-neon-third hover:underline">About Me</a>
+                <a href="#skills" class="block font-clash font-semibold text-neon-third hover:underline">Skills</a>
+                <a href="#project" class="block font-clash font-semibold text-neon-third hover:underline">Project</a>
             </div>
         </div>
     </nav>
 
     <!-- hero -->
-    <div class="backdrop-blur-sm h-auto py-20 lg:py-0 lg:mt-36 md:mx-20 lg:mx-44 md:my-20 md:rounded-3xl md:shadow-xl">
-        <div class="flex py-7 mx-5 lg:space-x-24">
-            <img class="shrink-0 hidden lg:block" src="img/profile.png" alt="profilku">
-            <div class="md:pt-4 space-y-2">
+    <div class="h-auto py-20 backdrop-blur-sm md:mx-20 md:my-20 md:rounded-3xl md:shadow-xl lg:mx-44 lg:mt-36 lg:py-0">
+        <div class="mx-5 flex py-7 lg:space-x-24">
+            <img class="hidden shrink-0 lg:block" src="img/profile.png" alt="profilku" />
+            <div class="space-y-2 md:pt-4">
                 <h1 data-aos="fade-right" data-aos-duration="1000"
-                    class="font-bold text-neon-third text-4xl font-clash lg:pt-24">Hello There, Im
-                    Prayogi!
+                    class="font-clash text-4xl font-bold text-neon-third lg:pt-24">
+                    Hello There, Im Prayogi!
                 </h1>
                 <div class="h-20">
-                    <h3 id="role" class="font-clash font-medium text-lg text-neon-third"></h3>
+                    <h3 id="role" class="font-clash text-lg font-medium text-neon-third"></h3>
                 </div>
-                <div class="flex items-center bg-white h-fit w-fit rounded-md" data-aos="fade-left"
+                <div class="flex h-fit w-fit items-center rounded-md bg-white" data-aos="fade-left"
                     data-aos-duration="1000">
-                    <div class="px-6 py-3 space-x-5">
+                    <div class="space-x-5 px-6 py-3">
                         <a href="https://github.com/MissterMan" target="_blank"><i
-                                class="fa-brands fa-github fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                                class="fa-brands fa-github fa-2xl text-neon-second transition duration-300 hover:text-neon-dark"></i></a>
                         <a href="https://www.linkedin.com/in/putra-prayogi/" target="_blank"><i
-                                class="fa-brands fa-linkedin fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                                class="fa-brands fa-linkedin fa-2xl text-neon-second transition duration-300 hover:text-neon-dark"></i></a>
                         <a href="https://www.instagram.com/pra.yogi__/" target="_blank"><i
-                                class="fa-brands fa-instagram fa-2xl hover:text-neon-dark text-neon-second"></i></a>
+                                class="fa-brands fa-instagram fa-2xl text-neon-second transition duration-300 hover:text-neon-dark"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="about" class="backdrop-blur-sm h-auto lg:mt-36 md:mx-20 lg:mx-44 md:my-20 md:rounded-3xl md:shadow-xl">
-        <h1 class="text-3xl py-10 text-center font-bold font-clash text-neon-third">About Me</h1>
-        <div class="lg:flex lg:mx-40 space-x-10 items-center px-10 lg:px-0">
-            <p data-aos="zoom-in" data-aos-duration="1000" class="text-neon-third font-clash font-medium text-lg">
-                Im a
-                university student,
-                UI Design
-                Enthusiast, and i also had an experience in Front-end web development, familiar using css framework
-                like <a class="underline hover:bg-neon-second" href="#">Bootstrap</a> and <a
-                    class="underline hover:bg-neon-second" href="#">Tailwind CSS</a>.</p>
-            <img class="shrink-0 hidden lg:block" src="img/profile2.png" alt="profilku">
+    <div id="about" class="h-auto backdrop-blur-sm md:mx-20 md:my-20 md:rounded-3xl md:shadow-xl lg:mx-44 lg:mt-36">
+        <h1 class="py-10 text-center font-clash text-3xl font-bold text-neon-third">
+            About Me
+        </h1>
+        <div class="items-center space-x-10 px-10 lg:mx-40 lg:flex lg:px-0">
+            <p data-aos="zoom-in" data-aos-duration="1000" class="font-clash text-lg font-medium text-neon-third">
+                Im a university student, UI Design Enthusiast, and i also had an
+                experience in Front-end web development, familiar using css framework
+                like
+                <a class="underline hover:bg-neon-second" href="#">Bootstrap</a> and
+                <a class="underline hover:bg-neon-second" href="#">Tailwind CSS</a>.
+            </p>
+            <img class="hidden shrink-0 lg:block" src="img/profile2.png" alt="profilku" />
         </div>
     </div>
 
     <!-- Technologies -->
-    <div id="skills" class="backdrop-blur-sm md:py-0 md:my-20 md:mx-20 lg:my-52 lg:mx-44 md:rounded-3xl md:shadow-xl">
-        <h1 class="text-3xl py-10 text-center font-bold font-clash text-neon-third">Technologies</h1>
-        <div class="lg:flex pb-7">
-            <div class="w-1/5 mx-auto shrink-0">
-                <img data-aos="zoom-in-up" data-aos-duration="1000" class="w-12 mx-auto h-12 my-6"
-                    src="./icon/css-3.svg" alt="Css">
+    <div id="skills" class="backdrop-blur-sm md:my-20 md:mx-20 md:rounded-3xl md:py-0 md:shadow-xl lg:my-52 lg:mx-44">
+        <h1 class="py-10 text-center font-clash text-3xl font-bold text-neon-third">
+            Technologies
+        </h1>
+        <div class="pb-7 lg:flex">
+            <div class="mx-auto w-1/5 shrink-0">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" class="mx-auto my-6 h-12 w-12"
+                    src="./icon/css-3.svg" alt="Css" />
             </div>
-            <div class="w-1/5 mx-auto shrink-0">
-                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="max-w-fit mx-auto my-6"
-                    src="./icon/figma.svg" alt="Figma">
+            <div class="mx-auto w-1/5 shrink-0">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100" class="mx-auto my-6 max-w-fit"
+                    src="./icon/figma.svg" alt="Figma" />
             </div>
-            <div class="w-1/5 mx-auto shrink-0">
-                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150" class="w-12 h-12 mx-auto my-5"
-                    src="./icon/javascript.png" alt="Java">
+            <div class="mx-auto w-1/5 shrink-0">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150" class="mx-auto my-5 h-12 w-12"
+                    src="./icon/javascript.png" alt="Java" />
             </div>
-            <div class="w-1/5 mx-auto shrink-0">
-                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200" class="w-16 h-14 mx-auto my-5"
-                    src="./icon/bs.png" alt="Bootstrap">
+            <div class="mx-auto w-1/5 shrink-0">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200" class="mx-auto my-5 h-14 w-16"
+                    src="./icon/bs.png" alt="Bootstrap" />
             </div>
-            <div class="w-1/5 mx-auto shrink-0">
-                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250" class="w-12 h-12 mx-auto my-5"
-                    src="./icon/Tailwind_Icon.png" alt="Tailwind">
+            <div class="mx-auto w-1/5 shrink-0">
+                <img data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="250" class="mx-auto my-5 h-12 w-12"
+                    src="./icon/Tailwind_Icon.png" alt="Tailwind" />
             </div>
         </div>
     </div>
 
     <!-- Project -->
-    <div id="project" class="backdrop-blur-sm lg:mt-10 pb-20">
-        <h1 class="text-3xl py-10 md:my-10 text-center font-bold font-clash text-neon-third">Project</h1>
-        <div class="flex-col lg:flex lg:flex-row lg:mx-14">
-
+    <div id="project" class="pb-20 backdrop-blur-sm lg:mt-10">
+        <h1 class="py-10 text-center font-clash text-3xl font-bold text-neon-third md:my-10">
+            Project
+        </h1>
+        <div class="flex-col lg:mx-14 lg:flex lg:flex-row">
             <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="100"
-                class="relative mx-auto bg-neon-third w-72 h-auto space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500 mb-10">
-                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 1.png" alt="EngkOl">
+                class="relative mx-auto mb-10 h-auto w-72 space-x-4 rounded-xl bg-neon-third shadow-md duration-500 hover:shadow-2xl">
+                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 1.png" alt="EngkOl" />
                 <div class="w-auto py-5 pr-5">
                     <a href="https://drive.google.com/file/d/1PI6buRkhsliQGZOVAPzQecj8vS8yRFEe/view?usp=sharing"
-                        class="underline hover:bg-neon-second font-black font-clash text-lg">UI Development
-                        <br>(2021)</a>
-                    <p class="font-clash font-normal text-sm mb-4">This is my final project on third year as a
-                        university
-                        student, the concept of this app is search the most nearest automotive repair shop and there are
-                        also some feature that might help the customer.</p>
+                        class="font-clash text-lg font-black underline hover:bg-neon-second">UI Development
+                        <br />(2021)</a>
+                    <p class="mb-4 font-clash text-sm font-normal">
+                        This is my final project on third year as a university student,
+                        the concept of this app is search the most nearest automotive
+                        repair shop and there are also some feature that might help the
+                        customer.
+                    </p>
                 </div>
             </div>
 
             <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150"
-                class="relative mx-auto bg-neon-third w-72 h-auto space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500 mb-10">
-                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 2.png" alt="MyUMM">
+                class="relative mx-auto mb-10 h-auto w-72 space-x-4 rounded-xl bg-neon-third shadow-md duration-500 hover:shadow-2xl">
+                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 2.png" alt="MyUMM" />
                 <div class="w-auto py-5 pr-5">
                     <a href="https://drive.google.com/file/d/16S6iVl5KH3l-5T2FTcqhhSjvzNsYsPg8/view?usp=sharing"
-                        class="underline hover:bg-neon-second font-black font-clash text-lg">UI Development
-                        <br>(2021)</a>
-                    <p class="font-clash font-normal text-sm mb-4">I redesign the User Interface application called My
-                        UMM for
-                        Student because there is a lot of UMM student complain about this application design that not
-                        fulfil the usability and less aesthetic.
+                        class="font-clash text-lg font-black underline hover:bg-neon-second">UI Development
+                        <br />(2021)</a>
+                    <p class="mb-4 font-clash text-sm font-normal">
+                        I redesign the User Interface application called My UMM for
+                        Student because there is a lot of UMM student complain about this
+                        application design that not fulfil the usability and less
+                        aesthetic.
                     </p>
                 </div>
             </div>
 
             <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200"
-                class="relative mx-auto bg-neon-third w-72 h-auto space-x-4 rounded-xl shadow-md hover:shadow-2xl duration-500 mb-10">
-                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 3.png" alt="Skut">
+                class="relative mx-auto mb-10 h-auto w-72 space-x-4 rounded-xl bg-neon-third shadow-md duration-500 hover:shadow-2xl">
+                <img class="rounded-tl-2xl rounded-tr-2xl py-5" src="img/Project 3.png" alt="Skut" />
                 <div class="w-auto py-5 pr-5">
                     <a href="https://drive.google.com/file/d/1mCjCpCet7-BlE_VZ5r4FZ1F9UGC4aWKC/view?usp=sharing"
-                        class="underline hover:bg-neon-second font-black font-clash text-lg">UX Development
-                        <br>(2021)</a>
-                    <p class="font-clash font-normal text-sm mb-auto">This is my final project on second year as a
-                        university student, we work as a team, and we create, design and research the user experience
-                        about scooter rental app named Skut.
+                        class="font-clash text-lg font-black underline hover:bg-neon-second">UX Development
+                        <br />(2021)</a>
+                    <p class="mb-auto font-clash text-sm font-normal">
+                        This is my final project on second year as a university student,
+                        we work as a team, and we create, design and research the user
+                        experience about scooter rental app named Skut.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- <div class="backdrop-blur-sm lg:mt-20 pb-20 lg:mx-44 lg:my-52">
         <div class="p-10">
@@ -209,26 +216,27 @@
         </div>
     </div> -->
 
-
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
 
         new TypeIt("#role", {
-            strings: ["Student 📖", "Front-end web developer 💻", "UI Enthusiast 🎨"],
+            strings: [
+                "Student 📖",
+                "Front-end web developer 💻",
+                "UI Enthusiast 🎨",
+            ],
             speed: 100,
             loop: true,
         }).go();
     </script>
     <script src="./js/script.js"></script>
-
-
 </body>
 
-<footer class="bg-neon-second h-auto">
-    <p class="font-clash font-medium text-neon-third text-sm text-center py-5">Made with &#128151; by <u
-            class="font-semibold">Prayogi</u></p>
+<footer class="h-auto bg-neon-second">
+    <p class="py-5 text-center font-clash text-sm font-medium text-neon-third">
+        Made with &#128151; by <u class="font-semibold">Prayogi</u>
+    </p>
 </footer>
 
 </html>

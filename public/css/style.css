@@ -486,24 +486,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-\[3px\] {
-  top: 3px;
-}
-
-.left-\[3px\] {
-  left: 3px;
 }
 
 .z-10 {
@@ -544,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-auto {
   margin-bottom: auto;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -588,16 +580,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[12px\] {
-  height: 12px;
-}
-
-.h-\[6px\] {
-  height: 6px;
+.h-60 {
+  height: 15rem;
 }
 
 .w-full {
@@ -616,6 +604,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .w-1\/5 {
@@ -638,32 +630,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: auto;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-1\/2 {
+  width: 50%;
 }
 
-.w-\[206px\] {
-  width: 206px;
-}
-
-.w-\[125px\] {
-  width: 125px;
-}
-
-.w-\[105px\] {
-  width: 105px;
-}
-
-.w-\[145px\] {
-  width: 145px;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[106px\] {
-  width: 106px;
+.w-56 {
+  width: 14rem;
 }
 
 .max-w-6xl {
@@ -676,6 +648,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: fit-content;
 }
 
+.max-w-max {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -684,12 +662,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.snap-center {
+  scroll-snap-align: center;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -730,12 +716,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -752,25 +732,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.75rem;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
 .rounded-tl-2xl {
   border-top-left-radius: 1rem;
 }
 
 .rounded-tr-2xl {
   border-top-right-radius: 1rem;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-neon-third {
-  --tw-border-opacity: 1;
-  border-color: rgb(181 255 217 / var(--tw-border-opacity));
 }
 
 .bg-neon-dark {
@@ -795,10 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-topo-dark {
   background-image: url('../img/topography copy.svg');
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .px-5 {
@@ -945,16 +908,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .duration-500 {
   transition-duration: 500ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
 }
 
 .selection\:bg-neon-second *::-moz-selection {
@@ -1081,10 +1040,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
 
   .lg\:block {
